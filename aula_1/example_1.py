@@ -6,6 +6,9 @@ Vamos escrever um programa (com Test Case) em que a função receba os prefixos
 Se observar as palavras terminam sempre com ack. Além disso, tem duas palavras
 que tem a vogal u antes do sufixo ack, são elas Ouack e Quack
 """
+__version__ = "0.0.1"
+__author__ = "Breno do Carmo"
+__license__ = "Unlicense"
 
 def prefix_and_suffix():
     """
