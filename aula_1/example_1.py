@@ -10,25 +10,24 @@ __version__ = "0.0.1"
 __author__ = "Breno do Carmo"
 __license__ = "Unlicense"
 
-def prefix_and_suffix():
-    """
-    Essa função retorna o prefixo mais
-    sufixo correto
-    """
 
-    prefix = "JKLMNOPQ"
+def generate_duck_names(letters):
+
     suffix = "ack"
-    l = []
-    for letter in prefix:
+
+    name = []
+    for letter in letters:
         if letter == "O" or letter == "Q":
-            l.append(letter + "uack")
+            name.append(letter + "uack")
             continue
-        l.append(letter + suffix) 
-    return l
+        name.append(letter + suffix) 
+    return name
 
-p = prefix_and_suffix()
 
-# Lista original
-names =["Jack", "Kack", "Lack", "Mack", "Nack", "Ouack", "Pack", "Quack"]
+prefix = "JKLMNOPQ"
+generate = generate_duck_names(letters=prefix)
 
-print(p)
+print(generate)
+
+
+
